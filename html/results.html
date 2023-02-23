@@ -5,110 +5,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FCB News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" type="image/x-icon" href="../img/fcblogo.png">
 
   </head>
-  <body class="body-results">
+  <body class="container-fluid">
+    
     <header>
-      <div class="header-navbar">
-        <div class="header">
-          <div class="search-bar">
-            <input class="search-bar-class" type="text" placeholder="Search..." />
-          </div>
-          <a href="../index.html"><img class="header-logo" src="../img/fcblogo.png" alt="fcblogo" /></a>
-
-          <div class="header-title"><h1>FCB News</h1></div>
-
-          <img class="header-menu" src="../img/menuiconwhite.jpg" alt="menuicon" />
+      <div class="d-flex flex-row justify-content-center">
+      <div class="container-fluid d-flex flex-row justify-content-center mt-1 mb-2">
+        <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="../index.html">
+          <img class="img-fluid logo" src="../img/fcblogo.png" alt="logo" />
+        </a>
         </div>
-        <div>
-          <nav>
-            <ul class="navbar">
-              <li class="item1"><a  class="nav-items" href="../index.html">Inicio</a></li>
-              <li class="item2"><a  class="nav-items" href="news.html">Noticias</a></li>
-              <li class="item3"><a  class="nav-items" href="calendar.html">Calendario</a></li>
-              <li class="item4"><a  class="nav-items" href="results.html">Resultados</a></li>
-              <li class="item5"><a  class="nav-items" href="contact-us.html">Contáctanos</a></li>
-            </ul>
-          </nav>
-        </div>
+        <div class="headerTitle colorBlanco my-4 ms-2"><h1>FCB News</h1></div>
       </div>
-    </header>
-    <main>
-      <aside class="aside-results">
-        <div class="table-title-results">
-          <h2>Resultados del mes de Enero</h2>
+        <nav class="navbar navbarMobile">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMobile"
+            aria-controls="navbarMobile"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </nav>
+    </div>
+      </div>
+
+        <nav class="navbar navbar-expand-lg colorFondo navbarDesktop">
+          <div class="collapse navbar-collapse navbar-nav" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link anclas" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="news.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="calendar.html">Calendario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="results.html">Resultados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="contact-us.html">Contáctanos</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="collapse navbar-collapse navbarMobile" id="navbarMobile">
+      <ul class="navbarMobile">
+        <li class="nav-item">
+          <a class="nav-link anclas" href="../index.html"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas" href="news.html">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas" href="news.html">Calendario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas" href="results.html">Resultados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas"  aria-current="page" href="contact-us.html">Contáctanos</a>
+        </li>
+      </ul>
+  </div>
+  </header>
+    <main class="row">
+      <aside class="col-xl-6 col-md-12 col-sm-12 mt-3">
+        <div class="asideTitle">
+          <h2 class="mb-4 text-white">Resultados del mes de Enero</h2>
         </div>
+        <div class="d-flex justify-content-center mb-3 ms-3">
 
         <img
           src="../img/resultsfcb-google.png"
           alt="tablaposiciones"
-          class="results-img"
+          class="img-fluid imgWidth rounded"
         />
+        </div>
 
       </aside>
-      
-      <section class="section-results">
-        <article class="ninth-article">
-          <div class="ninth-title-paragraph">
-                <h3 class="ninth-title">El Madrid reacciona a tiempo para 'noquear' al Valencia (2-0)</h3>
+      <section class="col-xl-6 col-md-12 col-sm-12 d-flex flex-column  justify-content-center">
+        <article class="row m-3">
+          <img class="img-fluid col-xl-5 px-3 pt-3" src="../img/madrid.png" alt="madrid" />
+          <div class="col-xl-7 p-3 d-flex flex-column justify-content-center">
+                <h3 class="firstArticle">El Madrid reacciona a tiempo para 'noquear' al Valencia (2-0)</h3>
             <div>
-              <p class="ninth-paragraph">
+              <p class="justifyContent">
                 Victoria agridulce para el Real Madrid: Consiguieron tres puntos de oro, gracias a los goles de Asensio y Vinícius Jr, pero Militão y Benzema terminaron lesionados.
-
               </p>
             </div>
           </div>
-          <img class="ninth-image" src="../img/madrid.png" alt="madrid" />
         </article>
 
-        <article class="tenth-article">
-          <img class="tenth-image" src="../img/vini.png" alt="bellerin" />
-          <div class="tenth-title-paragraph">
-                <h3 class="tenth-title">Gol anulado, expulsión y 'tangana': Las polémicas del Madrid-Valencia</h3>
-            <div class="tenth-paragraph">
+        <article class="row m-3">
+          <div class="col-xl-7 p-3 d-flex flex-column justify-content-center">
+                <h3 class="secondArticle">Gol anulado, expulsión y 'tangana': Las polémicas del Madrid-Valencia</h3>
+            <div class="justifyContent">
               <p>
                 El cuerpo arbitral, dirigido por Javier Alberola, fue protagonista en la victoria del Real Madrid sobre el Valencia con varias acciones claves y otras que pasaron desapercibidas.
 
               </p>
             </div>
           </div>
+          <img class="img-fluid col-xl-5 px-3 pb-3" src="../img/vini.png" alt="vini" />
         </article>
 
-        <article class="eleventh-article">
-          <div class="eleventh-title-paragraph">
-            <div class="eleventh-title">
-                <h3 class="eleventh-title">Sergi Roberto, inconforme con la oferta de renovación del Barça</h3>
-            </div>
-            <div class="eleventh-paragraph">
+        <article class="row m-3">
+          <img class="img-fluid col-xl-5 px-3 pt-3" src="../img/roberto.png" alt="sergiroberto" />
+          <div class="col-xl-7 p-3 d-flex flex-column justify-content-center">
+                <h3 class="thirdArticle">Sergi Roberto, inconforme con la oferta de renovación del Barça</h3>
+            <div class="justifyContent">
               <p>
                 El FC Barcelona ha comenzado a trabajar en la renovación de Sergi Roberto, pero el jugador ya habría rechazado la primera oferta de los culés y pide un cambio de condiciones.
+              </p>
+            </div>
+          </div>
+        </article>
 
+        <article class="row m-3">
+          <div class="col-xl-7 p-3 d-flex flex-column justify-content-center">
+                <h3 class="secondArticle">Tebas vuelve a sacar a la palestra su obsesión con la economía del Barça
+                </h3>
+            <div class="justifyContent">
+              <p>
+                Aunque no es su función principal, Javier Tebas continúa con su cruzada pública ante el FC Barcelona y su actual economía, la cual en concepto del Presidente de LaLiga no permite a los culés entrar en la puja por los mejores.
 
               </p>
             </div>
           </div>
-          <img class="eleventh-image" src="../img/roberto.png" alt="betisbarca" />
-
+          <img class="img-fluid col-xl-5 px-3 pb-3" src="../img/tebas.png" alt="tebas" />
         </article>
 
       </section>
-
-
     </main>
 
-    <footer>
-      <div class="footer">
-  <img class="ads-footer-results" src="../img/exitoads.gif" alt="kfcads">
-        <div class="signature-name-copyright">
-        <div class="signature-tm">
-          <img class="signature" src="../img/copyright.png" alt="trademarklogo" />
-          <p class="signature-name">Yorkman Rincon</p>
+    <footer class="row mt-3">
+      <div class="d-flex flex-column">
+  <img class="img-fluid rounded" src="../img/exitoads.gif" alt="exitoads">
+        <div class="d-flex flex-column align-self-center mt-2">
+          <img class="imgCopyright align-self-center" src="../img/copyright.png" alt="trademarklogo" />
+          <p class="colorBlanco">Yorkman Rincon</p>
         </div>
-      </div>
       <div>
 
     </footer>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>
