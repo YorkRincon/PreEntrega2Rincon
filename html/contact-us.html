@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCB News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/x-icon" href="../img/fcblogo.png">
+
+  </head>
+  <body class="body-background">
+    
+    <header>
+      <div class="d-flex flex-row justify-content-center">
+      <div class="container-fluid d-flex flex-row justify-content-center mt-1 mb-2">
+        <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="../index.html">
+          <img class="img-fluid logo" src="../img/fcblogo.png" alt="logo" />
+        </a>
+        </div>
+        <div class="headerTitle colorBlanco my-4 ms-2"><h1>FCB News</h1></div>
+      </div>
+        <nav class="navbar navbarMobile">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMobile"
+            aria-controls="navbarMobile"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </nav>
+    </div>
+      </div>
+
+        <nav class="navbar navbar-expand-lg colorFondo navbarDesktop">
+          <div class="collapse navbar-collapse navbar-nav" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link anclas" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="#">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="#">Calendario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="#">Resultados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="contact-us.html">Contáctanos</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="collapse navbar-collapse navbarMobile" id="navbarMobile">
+      <ul class="navbarMobile">
+        <li class="nav-item">
+          <a class="nav-link anclas" href="../index.html"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas" href="#">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas" href="#">Calendario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas" href="#">Resultados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas"  aria-current="page" href="contact-us.html">Contáctanos</a>
+        </li>
+      </ul>
+  </div>
+  </header>
+    <main class="colorBlanco">
+<br>
+<h2 class="d-flex flex-row justify-content-center">Déjanos tu comentario</h2><br>
+<form action="" method="get" class="d-flex flex-row justify-content-center justify-content-center ">
+
+      <fieldset class="colorFondo p-3">
+        <legend><h3 class="fieldset-h3">Llena este formulario por favor </h3></legend>
+        <p>
+          <label>
+            Selecciona tu país <br>
+            <select name="salutation">
+              <option>N/A</option>
+              <option>Colombia</option>
+              <option>Argentina</option>
+              <option>USA</option>
+              <option>Perú</option>
+              <option>Venezuela</option>
+            </select>
+          </label>
+        </p> <br>
+        <div class="form">
+          <label for="date">Fecha de hoy: </label>
+          <input type="date" name="date" id="date" required>
+        </div><br>
+        <div class="form">
+          <label for="name">Nombre completo: </label>
+          <input type="text" name="name" id="name" required>
+        </div><br>
+        <div class="form">
+          <label for="email">Correo electrónico: </label>
+          <input type="email" name="email" id="email" required>
+        </div><br>
+        <div class="form">
+          <label for="phone">Número de teléfono:</label>
+
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          
+          <small>Formato: 123-456-7890</small>
+        </div><br>
+
+        <div class="form">
+          <label for="type-of-request">Ingresa tu correo electrónico: </label>
+          <input type="text" name="type-of-request" id="type-of-request" required>
+        </div><br>
+        <p>
+          Selecciona una de las opciones :
+          <br><br><label><input type="radio" name="type" value="comment" /> Comentario</label><br>
+          <label><input type="radio" name="type" value="request" /> Solicitud</label><br>
+          <label><input type="radio" name="type" value="suggestion" /> Sugerencia</label>
+
+        </p>
+        <br>
+
+        <p>
+          <label>
+            Déjanos tu comentario :
+            <br />
+            <textarea name="address" cols="60" rows="10" class="container-fluid"></textarea>
+          </label>
+        </p>
+<br>
+          <input class="form-button container-fluid" type="submit" value="Enviar">
+      </form>
+
+    
+
+    </main>
+<br>
+<footer class="row mt-3">
+  <div class="d-flex flex-column">
+<img class="img-fluid rounded" src="../img/exitoads.gif" alt="exitoads">
+    <div class="d-flex flex-column align-self-center mt-2">
+      <img class="imgCopyright align-self-center" src="../img/copyright.png" alt="trademarklogo" />
+      <p class="colorBlanco">Yorkman Rincon</p>
+    </div>
+  <div>
+
+</footer>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>

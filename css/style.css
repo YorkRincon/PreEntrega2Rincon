@@ -1,0 +1,160 @@
+/* Inicio del header */
+header {
+  background-color: #181733;
+  color: white;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  margin-bottom: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.anclas {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 500;
+}
+
+/* Fin del header */
+
+/* Cambio de tamaño de algunas imágenes */
+.logo {
+  width: 100px;
+}
+
+.imgCopyright {
+  width: 35px;
+}
+
+.imgWidth {
+  width: 100%;
+}
+
+/* Aquí termina el cambio de tamaño de imágenes */
+
+/* Colorcito */
+.colorFondo {
+  background-color: #181733;
+}
+
+.colorBlanco {
+  color: white;
+}
+
+/* Fin del Colorcito */
+
+.justifyContent {
+  text-align: justify;
+}
+
+/* Media query para que aparezca el menu al lado del logo y título cuando está en versión móvil */
+@media (max-width: 991px) {
+  .navbarDesktop {
+    display: none;
+  }
+  .navbarMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/*  */
+
+/* Media query para que el menú de versión móvil desaparezca cuando esté en versión desktop */
+@media (min-width: 992px) {
+  .navbarMobile {
+    display: none;
+  }
+}
+/*  */
+
+body {
+  background-color: #181733;
+  background-color: #8c1a17;
+  background-image: linear-gradient(
+    270deg,
+    #181733 0,
+    rgba(24, 23, 51, 0) 70%,
+    rgba(24, 23, 51, 0) 50%,
+    90%,
+    #181733
+  );
+}
+
+article {
+  background-color: white;
+  border-radius: 10px;
+}
+
+article a {
+  text-decoration: none;
+  color: #181733;
+}
+
+.allNews {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 1%;
+}
+
+h3 {
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+article p {
+  font-size: 0.9rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.asideTitle {
+  text-align: center;
+}
+
+article a:hover {
+  color: #8c1a17;
+}
+
+.anclas:hover {
+  color: #8c1a17;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+
+.body-background {
+  background-image: url(../img/testim.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding-left: 10px;
+}
