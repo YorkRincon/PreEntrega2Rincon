@@ -5,129 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FCB News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" type="image/x-icon" href="../img/fcblogo.png">
 
   </head>
-  <body class="body-news">
+  <body class="container-fluid">
+    
     <header>
-      <div class="header-navbar">
-        <div class="header">
-          <div class="search-bar">
-            <input class="search-bar-class" type="text" placeholder="Search..." />
-          </div>
-          <a href="../index.html"><img class="header-logo" src="../img/fcblogo.png" alt="fcblogo" /></a>
-
-          <div class="header-title"><h1>FCB News</h1></div>
-
-          <img class="header-menu" src="../img/menuiconwhite.jpg" alt="menuicon" />
+      <div class="d-flex flex-row justify-content-center">
+      <div class="container-fluid d-flex flex-row justify-content-center mt-1 mb-2">
+        <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="../index.html">
+          <img class="img-fluid logo" src="../img/fcblogo.png" alt="logo" />
+        </a>
         </div>
-        <div>
-          <nav>
-            <ul class="navbar">
-              <li class="item1"><a  class="nav-items" href="../index.html">Inicio</a></li>
-              <li class="item2"><a  class="nav-items" href="news.html">Noticias</a></li>
-              <li class="item3"><a  class="nav-items" href="calendar.html">Calendario</a></li>
-              <li class="item4"><a  class="nav-items" href="results.html">Resultados</a></li>
-              <li class="item5"><a  class="nav-items" href="contact-us.html">Contáctanos</a></li>
-            </ul>
-          </nav>
-        </div>
+        <div class="headerTitle colorBlanco my-4 ms-2"><h1>FCB News</h1></div>
       </div>
-    </header>
+        <nav class="navbar navbarMobile">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMobile"
+            aria-controls="navbarMobile"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </nav>
+    </div>
+      </div>
+
+        <nav class="navbar navbar-expand-lg colorFondo navbarDesktop">
+          <div class="collapse navbar-collapse navbar-nav" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link anclas" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="news.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="calendar.html">Calendario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="results.html">Resultados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link anclas" href="contact-us.html">Contáctanos</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="collapse navbar-collapse navbarMobile" id="navbarMobile">
+      <ul class="navbarMobile">
+        <li class="nav-item">
+          <a class="nav-link anclas" href="../index.html"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas" href="news.html">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas" href="news.html">Calendario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas" href="results.html">Resultados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link anclas"  aria-current="page" href="contact-us.html">Contáctanos</a>
+        </li>
+      </ul>
+  </div>
+  </header>
     <main>
-      <section>
-        <article class="first-article">
-          <img class="first-image" src="../img/xavi.png" alt="xavi" />
-          <div class="first-title-paragraph">
-                <h2 class="first-title">Pavard, Amrabat... Los 'tapados' del Barça para lo que resta de
-                mercado</h2>
-              <p class="first-paragraph">
-                El Barça está a contrarreloj para cerrar algunas incorporaciones
-                de cara a lo que resta de campaña. Estos son los nombres de
-                algunos de los futbolistas vinculados con el club. Tanto Joan Laporta como el propio Xavi Hernández se mostraron muy reacios a la posibilidad de que el FC Barcelona hiciera algún movimiento durante el mercado de invierno debido a las limitaciones de LaLiga. 
-              </p>
-<p class="first-paragraph">
-
-              Sin embargo, la patronal ha dado su visto bueno después del retiro de Gerard Piqué y la venta de Memphis Depay, lo que ha abierto la puerta para que el club entre de lleno en la incorporación de refuerzos. Estos son los nombres que se encuentran en la órbita del club en la recta final de esta ventana de traspasos.
-            </p>
-
-          </div>
-        </article>
-
-        <article class="second-article">
-          <img class="second-image" src="../img/bellerin.png" alt="bellerin" />
-          <div class="second-title-paragraph">
-                <h2 class="second-title">Héctor Bellerín, a un paso del Sporting de Lisboa</h2>
-              <p class="second-paragraph">
-                A falta de un comunicado oficial, todos los indicios apuntan a que Héctor Bellerín dejará de ser jugador del FC Barcelona antes del cierre del mercado de invierno. El canterano se unirá a la disciplina del Sporting de Lisboa tras solo seis meses en el club en sustitución de Pedro Porro, quien partió con dirección al Tottenham Hotspur y dejó abierta una vacante.
-              </p>
-                <p class="second-paragraph">
-
-A sus 27 años, aterrizó en el Spotify Camp Nou a coste cero después de rescindir su contrato con el Arsenal de Mikel Arteta durante el pasado verano, lo que le posicionó en la plantilla como el único lateral derecho natural. Sin embargo, sus minutos fueron sumamente escasos debido a que Xavi Hernández consideró que tanto Jules Koundé como Ronald Araújo y Sergi Roberto eran opciones más sólidas para la banda.
-              </p>
-            </div>
-          </div>
-        </article>
-
-        <article class="third-article">
-          <img class="third-image" src="../img/betisbarca.png" alt="betisbarca" />
-          <div class="third-title-paragraph">
-                <h2 class="third-title">El Barça logra una sufrida victoria ante el Betis y es aún más líder (1-2)</h2>
-              <p class="third-paragraph">
-                El FC Barcelona logró una victoria importantísima sobre el Betis en el Benito Villamarín (1-2) gracias a los goles de Raphinha y Robert Lewandowski. Los de Xavi Hernández son aún más líderes de la Liga Española de Fútbol, con ocho puntos de ventaja sobre el Real Madrid al término de la primera vuelta, a pesar de sufrir en el tramo final por un infortunado gol en contra de Jules Koundé cuando todo parecía resuelto. Los de Manuel Pellegrini, fieles a su costumbre, lucharon hasta el final.
-              </p>
-
-                <p class="third-paragraph">
-
-                De forma similar al choque de hace un par de semanas por las semis de Supercopa, el Betis planteó un partido abierto, aunque replegado para intentar generar espacios en el fondo blaugrana. Luiz Henrique y Borja Iglesias tuvieron las primeras ocasiones para los locales tras un par de despistes de Alejandro Balde por izquierda. El lateral jugó muy adelantado en los primeros minutos y los 'verdiblancos' llegaron con peligro.
-              </p>
-          </div>
-        </article>
-
-        <article class="fourth-article">
-            <img class="fourth-image" src="../img/barcacup.jpeg" alt="betisbarca" />
-            <div class="fourth-title-paragraph">
-                  <h2 class="fourth-title">El Barça, infravalorado pese a tener números a la altura de los mejores de Europa</h2>
-                <p class="fourth-paragraph">
-                  A nivel doméstico, el Barça está siendo de los tres mejores equipos de toda Europa y los números así lo respaldan. Sin embargo, son pocos los que de verdad le entregan el crédito merecido al club azulgrana. 
-                </p>
-                  <p class="fourth-paragraph">
-
-                  Si se realizara una encuesta a los seguidores del fútbol europeo sobre qué equipo ha sido el mejor hasta ahora en la temporada seguro que dos de los equipos que saldrían más votados serían el Arsenal y el Nápoles, respectivos líderes de la Premier League y de la Serie A Los dos acabaron sus primeras vueltas ligueras, 19 partidos, con 50 puntos de 57 posibles, los mismos números alcanzados por el Barça de Xavi Hernández en LaLiga tras su triunfo 1-2 ante el Betis, aunque esto sí ha pasado más desapercibido.
-                </p>
-            </div>
-          </article>
-
-          <article class="fifth-article">
-            <img class="fifth-image" src="../img/tebas.png" alt="betisbarca" />
-            <div class="fifth-title-paragraph">
-                  <h2 class="fifth-title">Tebas vuelve a sacar a la palestra su obsesión con la economía del Barça</h2>
-                <p class="fifth-paragraph">
-                  Aunque no es su función principal, Javier Tebas continúa con su cruzada pública ante el FC Barcelona y su actual economía, la cual en concepto del Presidente de LaLiga no permite a los culés entrar en la puja por los mejores. Kylian Mbappé y Erling Haaland han ido ganando galones en las últimas dos temporadas para ser no sólo son presente, sino también el futuro del fútbol mundial por las próxima década. 
-                </p>
-                  <p class="fifth-paragraph">
-                  Si bien ambos coquetearon con la posibilidad de llegar a LaLiga el pasado verano, el presidente de la patronal ha sido claro nuevamente: sólo podrían estar en un equipo español.
-                  En plena planificación de los directivos para los traspasos de verano, en 'El Chiringuito' hablaban sobre la posibilidad de tener a Mbappé o Haaland en el fútbol español. Lejos de generar falsas expectativas, Tebas fue muy contundente respecto a su mirada. "Ojalá que sea así (que ambos jugadores jueguen en LaLiga) pero esos dos jugadores sólo podrían estar en el Real Madrid", zanjó.
-                </p>
-            </div>
-          </article>
-
-      </section>
-
-    </main>
-
-    <footer>
-      <div class="footer">
-  <img class="ads-footer-news" src="../img/exitoads.gif" alt="kfcads">
-        <div class="signature-name-copyright">
-        <div class="signature-tm">
-          <img class="signature" src="../img/copyright.png" alt="trademarklogo" />
-          <p class="signature-name">Yorkman Rincon</p>
+      <div class="row m-1 justify-content-center">
+        <div class="col-xl-5 col-md-5 col-sm-12 text-center bg-white rounded mb-3 me-3">
+          <h3 class="p-3">Pavard, Amrabat... Los 'tapados' del Barça para lo que resta de
+            mercado</h3>
+          <img class="img-fluid mb-2" src="../img/xavi.png" alt="xavi" />
+          <p class="justifyContent p-3">El Barça está a contrarreloj para cerrar algunas incorporaciones
+            de cara a lo que resta de campaña. Estos son los nombres de
+            algunos de los futbolistas vinculados con el club. Tanto Joan Laporta como el propio Xavi Hernández se mostraron muy reacios a la posibilidad de que el FC Barcelona hiciera algún movimiento durante el mercado de invierno debido a las limitaciones de LaLiga. </p>
         </div>
-      </div>
+
+        <div class="col-xl-5 col-md-5 col-sm-12 text-center bg-white rounded mb-3 ms-3">
+          <h3 class="p-3">Héctor Bellerín, a un paso del Sporting de Lisboa</h3>
+          <img class="img-fluid mb-2" src="../img/bellerin.png" alt="bellerin" />
+          <p class="justifyContent p-3">A falta de un comunicado oficial, todos los indicios apuntan a que Héctor Bellerín dejará de ser jugador del FC Barcelona antes del cierre del mercado de invierno. El canterano se unirá a la disciplina del Sporting de Lisboa tras solo seis meses en el club en sustitución de Pedro Porro, quien partió con dirección al Tottenham Hotspur y dejó abierta una vacante.A sus 27 años, aterrizó en el Spotify Camp Nou a coste cero después de rescindir su contrato con el Arsenal de Mikel Arteta. </p>
+        </div>
+
+        <div class="col-xl-5 col-md-5 col-sm-12 text-center bg-white rounded mb-3 me-3">
+          <h3 class="p-3">El Barça logra una sufrida victoria ante el Betis y es aún más líder (1-2)</h3>
+          <img class="img-fluid mb-2" src="../img/betisbarca.png" alt="betisbarca" />
+          <p class="justifyContent p-3">El FC Barcelona logró una victoria importantísima sobre el Betis en el Benito Villamarín (1-2) gracias a los goles de Raphinha y Robert Lewandowski. Los de Xavi Hernández son aún más líderes de la Liga Española de Fútbol, con ocho puntos de ventaja sobre el Real Madrid al término de la primera vuelta, a pesar de sufrir en el tramo final por un infortunado gol en contra de Jules Koundé cuando todo parecía resuelto. Los de Manuel Pellegrini, fieles a su costumbre, lucharon hasta el final. </p>
+        </div>
+
+        <div class="col-xl-5 col-md-5 col-sm-12 text-center bg-white rounded mb-3 ms-3">
+          <h3 class="p-3">El Barça, infravalorado pese a tener números a la altura de los mejores de Europa</h3>
+          <img class="img-fluid mb-2" src="../img/barcacup.jpeg" alt="barcacup" />
+          <p class="justifyContent p-3">A nivel doméstico, el Barça está siendo de los tres mejores equipos de toda Europa y los números así lo respaldan. Sin embargo, son pocos los que de verdad le entregan el crédito merecido al club azulgrana. Si se realizara una encuesta a los seguidores del fútbol europeo sobre qué equipo ha sido el mejor hasta ahora en la temporada seguro que dos de los equipos que saldrían más votados serían el Arsenal y el Nápoles. </p>
+        </div>
+      </div> 
+  
+
+    <footer class="row mt-3">
+      <div class="d-flex flex-column">
+  <img class="img-fluid rounded" src="../img/exitoads.gif" alt="exitoads">
+        <div class="d-flex flex-column align-self-center mt-2">
+          <img class="imgCopyright align-self-center" src="../img/copyright.png" alt="trademarklogo" />
+          <p class="colorBlanco">Yorkman Rincon</p>
+        </div>
       <div>
 
     </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

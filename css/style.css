@@ -87,15 +87,7 @@ body {
   );
 }
 
-article {
-  background-color: white;
-  border-radius: 10px;
-}
 
-article a {
-  text-decoration: none;
-  color: #181733;
-}
 
 .allNews {
   text-decoration: none;
@@ -119,6 +111,18 @@ h3 {
 article p {
   font-size: 0.9rem;
 }
+article {
+  background-color: white;
+  border-radius: 10px;
+}
+
+article a {
+  text-decoration: none;
+  color: #181733;
+}
+article a:hover {
+  color: #8c1a17;
+}
 
 footer {
   display: flex;
@@ -129,9 +133,6 @@ footer {
   text-align: center;
 }
 
-article a:hover {
-  color: #8c1a17;
-}
 
 .anclas:hover {
   color: #8c1a17;
